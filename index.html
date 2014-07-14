@@ -1,0 +1,28 @@
+<!doctype html>
+    <html>
+        <head>
+            
+            <title>Girish</title>
+             
+        </head>
+        <body>
+        <center>
+        <h1>Welcome!</h1>
+            <p>O HAi! I'm Girish and you are currently viewing my very first android app! Press the button to know the current date and time.</p>
+            <button id = "silly">Date & Time</button>
+            <button id = "clear">Clear</button>
+            <div id = "results"></div>
+            
+            </center>
+        <script src = "js/zepto.min.js"> </script>
+        <script src = "js/silly.js"> </script>
+        <script>
+        $('#silly').click(function() {
+            SILLY.DoIt($('#results'));
+        });
+        $('#clear').click(function() {
+            $('#results').html('');
+        });       
+        </script>        
+        </body>
+    <html>
